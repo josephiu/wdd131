@@ -3,7 +3,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+    font-weight: 400;
+     font-style: normal;
+     font-variation-settings:    "wdth" 85.1;
+
+
+
 }
+
+
+
+/* 
+.roboto-<uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 85.1;
+}
+ */
+
+
+
+
+
 
 /* BODY */
 body {
@@ -13,9 +38,17 @@ body {
 
 /* HEADER */
 header {
+    margin-top: 2r;
     background-color: rgb(224, 181, 117);
-    padding: 2rem;
+   
     text-align: center;
+}
+
+header span{
+    font-size: 1.5rem;
+    color: black;
+    
+    
 }
 
 /* NAVIGATION */
@@ -43,20 +76,23 @@ header {
 
 /* MAIN */
 main {
+    display: grid;
     padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 2rem;
+    grid-column: span 2; /* This makes the heading span across both columns */
 }
 
-/* FLEX CONTAINER */
-.cards-container {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-}
+
+
+
+
+
 
 /* CARDS */
 .card1,
@@ -67,14 +103,6 @@ h1 {
     background-color: white;
 }
 
-/* THIS FIXES THE WIDTH ISSUE */
-.card1 {
-    flex: 2;
-}
-
-.card2 {
-    flex: 1;
-}
 
 /* CARD HEADINGS */
 .card1 h2,
@@ -113,12 +141,12 @@ article div {
     gap: 1rem;
     justify-content: center;
 }
- article h3 { 
-    
-    border-bottom: 1px  solid rgb(139, 87, 9); 
-         
+ article h3 {
+
+    border-bottom: 1px  solid rgb(139, 87, 9);
+
     padding: 0.5rem;
-    
+
     }
 
 
@@ -152,6 +180,14 @@ footer {
     .cards-container {
         flex-direction: column;
     }
+    main {
+        display: block;
+        gap: 1rem;
+    }
+
+    .card2 {
+        margin-top: 1rem;
+    }
 
     .about-content {
         flex-direction: column;
@@ -159,6 +195,6 @@ footer {
     }
 
     .country-details {
-        display: block         
+        display: block
     }
 }
