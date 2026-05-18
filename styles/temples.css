@@ -1,0 +1,63 @@
+
+
+@media screen and (max-width: 510px) {
+    
+.site-navigation {
+    position: fixed;
+    top: 60px;
+    background-color: rgb(2, 10, 27);
+    width: 100%;
+    left: 0;
+    padding: 10px 0 25px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.navigation {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.nav-link {
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.nav-btn {
+    font-size: 11px;
+    padding: 6px 16px;
+
+
+
+}
+.nav-btn:hover,
+.nav-btn:focus {    
+    background-color: rgb(27, 119, 224);
+    transition: all 0.3s;
+}
+
+.hamburger {
+    display: block;
+}
+
+
+
+
+
+.gallery {
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-row: s;
+    grid-template-columns: max-content;
+    gap: 20px;
+    padding: 2rem;
+    
+
+
+}
+
+
+
+
+}
