@@ -1,0 +1,272 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+
+}
+
+
+
+/* 
+.roboto-<uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 85.1;
+}
+ */
+
+
+
+
+
+
+/* BODY */
+body {    
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+     font-style: normal;
+     font-variation-settings:    "wdth" 85.1;
+
+}
+
+/* HEADER */
+header {    
+    background-color: rgb(224, 181, 117);   
+    text-align: center;
+}
+
+header span{
+    font-size: 1.5rem;
+    color: black;
+    
+    
+}
+
+/* NAVIGATION */
+.navigation {
+    list-style: none;
+    display: flex;
+    background-color: black;
+}
+
+.navigation li {
+    flex: 1;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    background-color: #444;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+    /* gap: 2rem; */
+}
+
+h1 {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+    /* grid-column: span 2; */
+    background-color: bisque; /* This makes the heading span across both columns */
+}
+
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+
+.weather {
+    position: absolute;
+    /* background-color: rgb(150, 91, 19); */
+    right: 5vh;
+    bottom: 5vh
+    
+
+
+}
+
+
+
+.weather-logo{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+   background-color: rgb(6, 80, 43);
+    color: #fff2f2;
+    position: relative;
+    right: 1.5rem;
+    padding: 1rem;
+}
+
+
+.weather-data-container {
+    background-color:#fff2f2;
+    padding: 0.5rem;
+    
+
+}
+
+
+.data {
+    position: absolute;
+    background-color: rgb(150, 91, 19);
+    left: 5vh;
+    top: 10vh
+
+
+}
+
+.data h2{    
+    background-color: rgb(6, 80, 43);
+    color: #fff2f2;
+    position: relative;
+    right: 1.5rem;
+    padding: 0.5rem;
+}
+
+.data-table-container{
+    background-color:#fff2f2;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+/* LINKS */
+.links {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* FOOTER */
+footer {
+    background-color: wheat;
+    text-align: center;
+    padding: 2rem;
+    /* margin-top: 2rem; */
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    .cards-container {
+        flex-direction: column;
+    }
+    main {
+        display: block;
+        position: static;
+        gap: 2rem;
+        
+    }
+
+   
+
+    h2 {
+                
+        text-align: center;
+    }
+
+    .data-table {        
+         margin: 0 auto; 
+        
+    }
+
+    .weather-table {        
+         margin: 0 auto; 
+         
+    }
+
+    th {
+        text-align: right;
+    }
+
+    td {
+        text-align: left;
+    }
+
+    .weather-logo{
+        position: static;
+        text-align: center;
+        
+        display: block;
+        gap: 2rem;
+        align-items: center;
+        background-color: aliceblue
+    }
+
+      
+    
+
+
+    .weather, .data {
+        position:static;
+        margin-top: 0.5rem;
+        background-color: aliceblue;
+    }
+
+
+    .weather-logo, .data h2 {
+        position: static;
+        color: black;
+        background-color: aliceblue;
+    }
+
+    .data-table-container, .weather-data-container {
+        background-color: aliceblue;;
+    }
+
+
+
+    /* .weather, .data {
+    position: relative;
+} */
+
+
+   
+
+    /* .data-table {
+        margin-top: 1rem; 
+        align-content: center;
+        
+    } */
+
+    /* .about-content {
+        flex-direction: column;
+        text-align: center;
+    } */
+
+    .country-details {
+        display: block
+    }
+}

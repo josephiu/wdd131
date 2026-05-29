@@ -24,3 +24,4 @@ buttonElement.addEventListener("click", function () {
 	// focus the user back to the input field
 	inputElement.focus();
 });
+
