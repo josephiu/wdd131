@@ -22,9 +22,13 @@
  */
 
 
-
-
-
+ :root{
+    --gold-colour: rgb(224, 181, 117);  
+    --light-gold-colour:var(--Gold-colour)
+    --blue-colour:var(--fore-ground-colour)
+    --light-blue:var(--fore-ground-colour)
+ }
+  
 
 /* BODY */
 body {    
@@ -36,9 +40,18 @@ body {
 
 }
 
+
+
+
+
+
+
+
+
+
 /* HEADER */
 header {    
-    background-color: rgb(224, 181, 117);   
+    background-color: var(--gold-colour);
     text-align: center;
 }
 
@@ -120,6 +133,27 @@ h1 {
 }
 
 
+.weather-logo svg{
+    display: none;
+   
+}
+
+
+
+.weather-logo::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('/images/pngwing.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
 .weather-data-container {
     background-color:#fff2f2;
     padding: 0.5rem;
@@ -149,10 +183,6 @@ h1 {
     background-color:#fff2f2;
     padding: 1rem;
 }
-
-
-
-
 
 
 
@@ -225,6 +255,15 @@ footer {
         background-color: aliceblue
     }
 
+    .weather-logo::after {
+        content: none;
+    }
+
+    .weather-logo svg {
+        display: inline-block;
+    }
+
+
       
     
 
@@ -245,6 +284,9 @@ footer {
     .data-table-container, .weather-data-container {
         background-color: aliceblue;;
     }
+
+
+    
 
 
 
