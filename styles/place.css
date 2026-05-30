@@ -24,9 +24,9 @@
 
  :root{
     --gold-colour: rgb(224, 181, 117);  
-    --light-gold-colour:var(--Gold-colour)
-    --blue-colour:var(--fore-ground-colour)
-    --light-blue:var(--fore-ground-colour)
+    /* --light-gold-colour:var(--Gold-colour) */
+    /* --blue-colour:var(--fore-ground-colour)
+    --light-blue:var(--fore-ground-colour) */
  }
   
 
