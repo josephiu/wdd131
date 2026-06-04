@@ -90,7 +90,7 @@ body {
 }
 
 
-.site-navigation {
+nav{
     display: flex;
         /* background-color: black; */
         /* grid-template-columns: span 2 */
@@ -100,7 +100,7 @@ body {
 
 
 
-.navigation {
+ nav ul{
     display: flex;
     justify-content: space-between;
     gap: 10px;
