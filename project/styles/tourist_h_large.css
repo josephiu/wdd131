@@ -1,16 +1,12 @@
 
 
 :root {
-    --primary-color: #011627ff
+    --primary-color: #011627ff;
     --secondary-color: #FFF9EE;
     --accent1-color: #426088;
-    --accent2-color: #011627ff;
-    
+    --accent2-color: #011627ff;   
  
-    --nav-background-color:rgb(52, 3, 10);
-    --nav-link-color: rgb(26, 9, 80);
-    --nav-hover-link-color: rgb(16, 102, 193);
-    --nav-hover-background-color:rgb(3, 3, 52);
+   
 }
 
 
@@ -24,16 +20,16 @@ body {
      height: 5000px;
 }
 
-
+/* 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
+    
     color: var(--primary-color)
 }
 
 header {
     padding: 20px;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
 }
 
 p {
@@ -41,12 +37,12 @@ p {
 }
 
 nav {
-    background-color: var(--nav-background-color);
+    background-color: var(--accent2-color);
     font-size: 1.2rem;
     display: flex;
-}
+} */
 
-nav a {
+/* nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
@@ -60,4 +56,4 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-background-color);
     background-color: var(--nav-hover-background-color);
-}
+} */
