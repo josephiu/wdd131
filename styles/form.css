@@ -68,19 +68,20 @@ main {
 }
 
 .rating {
-    display: grid;
+    display: grid; 
     gap: 0.5rem;
-    margin-bottom: 1rem;
-    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 1rem; 
+    /* grid-template-columns: repeat(5, 1fr); */
     justify-items: center;
+   
    
   
 
     
 }
 
-.rating p{
-    grid-column: span 5;
+div strong {
+    grid-column: span 6;
     justify-self: start;
     /* font-size: 1.2rem; */
     /* text-align: start;
@@ -103,7 +104,7 @@ main {
 
 #productName,
 #date,
-#name,
+#username,
 #comments,
 #submit
 
@@ -138,14 +139,11 @@ footer {
 
 @media (max-width: 768px) {
 
-    .cards-container {
-        flex-direction: column;
-    }
+    
+    
     main {
         width: 100%;
-        display: block;
-        position: static;
-        gap: 2rem;
+        
         
     }
 }
