@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country page</title>
+    <meta name="description"  content="This is a product review form.">
+    <meta name="author" content="Joseph Israel U.">    
+        <!-- /* google fonts*/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,85.1,100..900;1,85.1,100..900&display=swap" rel="stylesheet">
+        
+     <link rel="stylesheet" href="styles/form.css">      
+
+
+    <script src="scripts/form.js" defer></script>
+    <!-- <link rel="stylesheet" href="styles/media-query-large.css"> -->
+</head>
+<body>
+    <header>
+        <h1 id="course-title">
+            PRODUCT REVIEW 
+        </h1>         
+
+
+    </header>
+    <main>
+        <form id="reviewForm"  get="post" action="review.html">
+           
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="">Select a product</option>
+                <!-- <option value="`Product 1">Product 1</option>
+                <option value="Product 2">Product 2</option>
+                <option value="Product 3">Product 3</option> -->
+            </select> <br>
+            <br>
+
+
+            <div class="rating">
+                <p>Overall Rating:</p>
+                <div class="rating-options1">                 
+
+                <label for="rating1">⭐ </label> <br>
+                <input type="radio" id="rating1" name="rating" value="1" required>
+                </div>
+                 <div class="rating-options2">
+                
+                <label for="rating2">⭐⭐</label> <br>
+                <input type="radio" id="rating2" name="rating" value="2" required>
+                </div>
+
+                 <div class="rating-options3">                  
+                <label for="rating3">⭐⭐⭐ </label> <br>
+                <input type="radio" id="rating3 " name="rating" value="3" required>
+                </div>
+
+                 <div class="rating-options4">  
+                <label for="rating4">⭐⭐⭐⭐</label> <br>
+                <input type="radio" id="rating4" name="rating" value="4" required>
+                </div>
+
+                 <div class="rating-options5"> 
+                <label for="rating5">⭐⭐⭐⭐⭐</label> <br>
+                <input type="radio" id="rating5" name="rating" value="5"  required>
+            </div>
+
+            </div> 
+
+
+        <label for="date">Date of Installation:</label> <br>
+        <input type="date" id="date" name="date" required> 
+        <br>
+        <br>
+
+
+        <label for="features">Which features did you fid usful in the product?
+            <p>check all that apply</p>
+        </label>
+        <input type="checkbox" id="feature1" name="features" value="Feature 1">
+        <label for="">Durability</label><br>
+
+        <input type="checkbox" id="feature2" name="features" value="Feature 2">
+        <label for="feature2">Performance</label><br>
+
+        <input type="checkbox" id="feature3" name="features" value="Feature 3">
+        <label for="feature3">Design</label><br><br>
+               
+
+
+        <label for="comments">Written Review (optional):</label><br>
+        <textarea id="comments" name="comments"></textarea><br><br>
+
+
+        <label for="comments">Your name (optional):</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name here"> <br>
+            
+            
+
+            
+        <br>
+        <input type="submit" id="submit" value="Submit Review">        
+
+
+
+
+        </form>
+    
+    </main>
+     <footer>
+         <p> 
+           copyright © 2026  🌴 Joseph Israel 🌴 <span> Dubai, UAE </span>
+
+        </p>
+        <p> Last Modified: <span id="lastModified"> </span>       
+        </p>
+    </footer>    
+</body>
+</html>

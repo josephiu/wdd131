@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Book of Mormon Favorites chapters</title>
+    <meta name="description"  content="This app will allow user to select their favorite chapters in the Book of Mormon and display them in a list.">
+    <meta name="author" content="Joseph Israel U.">    
+        <!-- /* google fonts*/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,85.1,100..900;1,85.1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bom.css">
+    <script src="scripts/bom.js" defer></script>
+    <!-- <link rel="stylesheet" href="styles/media-query-large.css"> -->
+</head>
+<body>
+    <h1>📖 Book of Mormon - Top 10</h1>
+<main>
+	<label for="favchap">Enter Book and Chapter: </label>
+	<input type="text" id="favchap" placeholder="Alma 5">
+    
+	<button type="submit">Add Chapter</button>
+    
+    <p id="message" aria-live="polite"></p>
+	<ul id="list"></ul>
+</main>
+    
+</body>
+</html>

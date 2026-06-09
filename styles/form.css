@@ -1,0 +1,136 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+
+}
+
+
+
+/* 
+.roboto-<uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 85.1;
+}
+ */
+
+
+ :root{
+    --gold-colour: rgb(224, 181, 117);  
+    /* --light-gold-colour:var(--Gold-colour) */
+    /* --blue-colour:var(--fore-ground-colour)
+    --light-blue:var(--fore-ground-colour) */
+ }
+  
+
+/* BODY */
+body {    
+    max-width: 500px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+     font-style: normal;
+     font-variation-settings:    "wdth" 85.1;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+header {    
+    background-color: var(--gold-colour);
+    text-align: center;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    
+    /* gap: 2rem; */
+}
+
+.rating {
+    display: grid;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+   
+    content: space-between;
+
+    
+}
+
+.rating p{
+    grid-column: span 5;
+    justify-self: start;
+    /* font-size: 1.2rem; */
+    /* text-align: start;
+     */
+    /* background-color: rgb(224, 181, 117); */
+}
+
+.rating-options1 ,
+.rating-options2 ,  
+.rating-options3 ,
+.rating-options4 ,
+.rating-options5 { 
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+   
+    
+
+}
+
+#productName,
+#date,
+#name,
+#comments,
+#submit
+
+
+{
+
+    width: 100%;
+    height: 50px;
+}
+
+ 
+
+
+
+
+h1 {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+    /* grid-column: span 2; */
+    background-color: bisque; /* This makes the heading span across both columns */
+}
+
+
+/* FOOTER */
+footer {
+    background-color: wheat;
+    text-align: center;
+    padding: 2rem;
+    /* margin-top: 2rem; */
+}
