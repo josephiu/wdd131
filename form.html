@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country page</title>
-    <meta name="description"  content="This is a product review form.">
+    <meta name="description"  content="This is a product review form which is used in in practicing form elements.">
     <meta name="author" content="Joseph Israel U.">    
         <!-- /* google fonts*/ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,15 +26,16 @@
 
     </header>
     <main>
-        <form id="reviewForm"  get="post" action="review.html">
+        <form id="reviewForm" method="get" action="review.html">
            
             <label for="productName">Product Name:</label>
             <select id="productName" name="productName" required>
-                <option value="">Select a product</option>
+                <option value="">Select a product:</option>
                 <!-- <option value="`Product 1">Product 1</option>
                 <option value="Product 2">Product 2</option>
                 <option value="Product 3">Product 3</option> -->
-            </select> <br>
+            </select> 
+            <br>
             <br>
 
 
@@ -75,7 +76,7 @@
         <br>
 
 
-        <label for="features">Which features did you fid usful in the product?
+        <label for="features">Which features did you find useful in the product?
             <p>check all that apply</p>
         </label>
         <input type="checkbox" id="feature1" name="features" value="Feature 1">
@@ -86,6 +87,10 @@
 
         <input type="checkbox" id="feature3" name="features" value="Feature 3">
         <label for="feature3">Design</label><br><br>
+
+        <input type="checkbox" id="feature4" name="features" value="Feature 4">
+        <label for="feature4">Usability</label><br><br>
+               
                
 
 
@@ -93,8 +98,8 @@
         <textarea id="comments" name="comments"></textarea><br><br>
 
 
-        <label for="comments">Your name (optional):</label><br>
-        <input type="text" id="name" name="name" placeholder="Your name here"> <br>
+        <label for="names">Your name (optional):</label><br>
+        <input type="text" id="name" name="names" placeholder="Your name here"> <br>
             
             
 
